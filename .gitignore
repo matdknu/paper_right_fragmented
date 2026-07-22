@@ -1,0 +1,54 @@
+# ---- R / IDE -----------------------------------------------------------------
+.Rproj.user
+.Rhistory
+.RData
+.RDataTmp
+.Ruserdata
+*.Rproj.bak
+
+# ---- Secretos y APIs (nunca versionar) ---------------------------------------
+.env
+.env.*
+!.env.example
+.Renviron
+.Renviron.local
+*_api_key*
+*credentials*
+secrets/
+.secrets/
+
+# ---- Datos brutos y procesados (privados / locales) --------------------------
+# Solo documentación y placeholders en el remoto
+data/raw/**
+!data/raw/README.md
+data/processed/**
+!data/processed/.gitkeep
+data/cleaning/**
+!data/cleaning/.gitkeep
+data/**/*.csv
+data/**/*.parquet
+data/**/*.rds
+data/**/*.xlsx
+data/**/*.txt
+
+# ---- Outputs: versionar figuras y tablas agregadas ---------------------------
+# Excluir exports con texto de comentarios, autores o IDs de coding crudo
+outputs/quallmer/tablas/coded_joined_*.csv
+outputs/**/*.rds
+outputs/models/**
+outputs/plots/**
+
+# ---- Paper Quarto (artefactos de build locales) ------------------------------
+paper/docs/_output/
+paper/docs/_freeze/
+paper/docs/.quarto/
+paper/docs/_site/
+**/*_cache/
+**/cache/
+
+# ---- Sistema / basura --------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.log
+tmp/
+temp/

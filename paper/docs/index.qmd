@@ -1,0 +1,36 @@
+---
+format:
+  html:
+    toc: false
+    title-block-style: none
+  pdf:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+# Derecha fragmentada y un enemigo compartido {.unnumbered}
+
+## Paper en preparación {.unnumbered}
+
+**Matías Javier Deneken Uribe**
+
+::: {#abstract}
+## Resumen {.unnumbered}
+
+[Escribir resumen en español: problema, datos, método principal, hallazgos y contribución. Máximo ~250 palabras.]
+
+**Palabras clave:** derecha chilena; polarización; Reddit; análisis textual; elecciones 2025.
+:::
+
+::: {.content-visible when-format="html"}
+---
+
+Este manuscrito se compila desde capítulos Quarto independientes. Usa la barra lateral para navegar o renderiza el documento completo con `quarto render` desde `paper/docs/`.
+:::

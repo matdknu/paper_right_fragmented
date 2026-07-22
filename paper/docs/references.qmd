@@ -1,0 +1,10 @@
+---
+title: "Referencias"
+lang: es
+bibliography: bibliography.bib
+---
+
+::: {#refs}
+:::
+
+<!-- Añade citas en el texto con [@clave]. Evitar \nocite{*} vacío: rompe el PDF LaTeX. -->

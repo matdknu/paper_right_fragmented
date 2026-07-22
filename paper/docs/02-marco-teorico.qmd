@@ -1,0 +1,37 @@
+---
+title: "Marco teórico"
+lang: es
+---
+
+# Marco teórico {#sec-marco-teorico}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+<!-- quarto preview 02-marco-teorico.qmd -->
+
+## Fragmentación de la derecha
+
+[Teoría y evidencia sobre fragmentación partidaria y discursiva en derechas contemporáneas.]
+
+## Polarización y adversario compartido
+
+[Polarización afectiva, construcción de enemigos comunes, convergencia táctica entre sectores.]
+
+## Discurso político en plataformas digitales
+
+[Reddit y debates electorales; ventajas y límites del análisis de datos digitales.]
+
+## Hipótesis o proposiciones analíticas
+
+| ID | Proposición |
+|----|-------------|
+| P1 | [Enunciar proposición empírica vinculada a fragmentación / adversario compartido] |
+| P2 | […] |
+
+<!-- Citas: [@autor2024] — entradas en bibliography.bib -->

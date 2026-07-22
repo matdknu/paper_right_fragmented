@@ -1,0 +1,32 @@
+---
+title: "Conclusión"
+lang: es
+---
+
+# Conclusión {#sec-conclusion}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+<!-- quarto preview 05-conclusion.qmd -->
+
+## Síntesis
+
+[Respuesta a la pregunta de investigación en función de @sec-resultados.]
+
+## Implicancias teóricas y empíricas
+
+[Qué implica para el estudio de derechas y polarización en Chile.]
+
+## Limitaciones
+
+[Representatividad de Reddit, sesgos de anotación automática, etc.]
+
+## Investigación futura
+
+[Líneas de trabajo derivadas.]

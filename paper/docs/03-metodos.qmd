@@ -1,0 +1,60 @@
+---
+title: "Métodos"
+lang: es
+---
+
+# Métodos {#sec-metodos}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 7,
+  fig.height = 5,
+  dpi = 300
+)
+```
+
+<!-- quarto preview 03-metodos.qmd -->
+
+## Diseño del estudio
+
+[Diseño longitudinal / comparativo; unidades de análisis (comentarios, hilos, autores).]
+
+## Datos
+
+Corpus Reddit consolidado desde la tesis (`thesis_maci`), disponible en este repositorio vía `data/raw/`:
+
+```{r paths-datos, eval=FALSE}
+# Desde paper/docs/: subir dos niveles a la raíz del repo
+root <- normalizePath("../..")
+source(file.path(root, "R", "data_raw.R"))
+prepare_comentarios_unido()
+comentarios <- load_comentarios_unido(prepare = FALSE)
+posts       <- load_posts()
+```
+
+| Elemento | Descripción |
+|----------|-------------|
+| Fuente | Reddit (`r/chile`, `r/RepublicadeChile`, y subreddits de derecha) |
+| Ventana temporal | [Definir fechas del paper] |
+| Script de preparación | `scripts/01_prepare_data.R` |
+| Funciones R | `R/data_raw.R` |
+
+## Preprocesamiento y depuración
+
+[Criterios de exclusión; deduplicación; filtrado por candidatos o temas.]
+
+## Análisis
+
+[Métodos de anotación, modelado, visualización. Referenciar scripts reutilizados de `thesis_maci` si aplica.]
+
+```{r ejemplo-carga, eval=FALSE}
+# source("../../R/data_raw.R")
+# comentarios <- load_comentarios_unido()
+```
+
+## Consideraciones éticas y de validez
+
+[Datos públicos, limitaciones de representatividad, reproducibilidad.]

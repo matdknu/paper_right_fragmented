@@ -1,0 +1,42 @@
+---
+title: "Resultados"
+lang: es
+---
+
+# Resultados {#sec-resultados}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 7,
+  fig.height = 5,
+  dpi = 300
+)
+```
+
+<!-- quarto preview 04-resultados.qmd -->
+
+## Resultados descriptivos
+
+[Volumen del corpus, distribución temporal, candidatos mencionados.]
+
+## Fragmentación discursiva
+
+[Hallazgos principales sobre diferenciación entre corrientes de derecha.]
+
+## Adversario compartido
+
+[Patrones de convergencia frente a figuras o bloques adversos.]
+
+## Figuras y tablas
+
+| Métrica | Valor |
+|---------|------:|
+| *N* comentarios | — |
+| *N* hilos | — |
+
+: Ejemplo de tabla resumen. {#tbl-resumen}
+
+[Insertar figuras con chunks R y leyenda `:#fig-id`. Referencia: @tbl-resumen.]

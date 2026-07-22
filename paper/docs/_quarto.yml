@@ -1,0 +1,63 @@
+project:
+  type: book
+  output-dir: _output
+  render:
+    - index.qmd
+    - 01-introduccion.qmd
+    - 02-marco-teorico.qmd
+    - 03-metodos.qmd
+    - 04-resultados.qmd
+    - 05-conclusion.qmd
+    # - references.qmd
+
+bibliography: bibliography.bib
+
+book:
+  title: "Derecha fragmentada y un enemigo compartido"
+  subtitle: "Paper en preparación"
+  author:
+    - "Matías Javier Deneken Uribe"
+  date: today
+  date-format: "D [de] MMMM [de] YYYY"
+  chapters:
+    - index.qmd
+    - 01-introduccion.qmd
+    - 02-marco-teorico.qmd
+    - 03-metodos.qmd
+    - 04-resultados.qmd
+    - 05-conclusion.qmd
+    # references.qmd: activar cuando haya entradas en bibliography.bib
+    # (bibliografía vacía rompe la compilación PDF con CSLReferences)
+  language: es
+
+format:
+  html:
+    theme: cosmo
+    css: custom.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    lang: es
+    code-fold: true
+    reference-location: margin
+    citation-location: margin
+  # PDF: compilar con  quarto render --to pdf  (requiere LaTeX / TinyTeX)
+  pdf:
+    documentclass: article
+    papersize: a4
+    fontsize: 12pt
+    linestretch: 1.15
+    number-sections: true
+    top-level-division: section
+    lang: es
+    include-in-header:
+      text: |
+        \usepackage{float}
+        \usepackage{booktabs}
+        \usepackage{longtable}
+
+execute:
+  echo: false
+  warning: false
+  message: false
+  freeze: auto
